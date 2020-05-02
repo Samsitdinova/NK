@@ -58,6 +58,7 @@ body {
     line-height: 47px;
     color: #000000;
     padding-top: 46px;
+    margin-top: 0px;
 }
 
 .main-nav__list {
@@ -84,7 +85,6 @@ body {
     letter-spacing: 2px;
     color: #000000;
 }
-
 
 .intro {
     position: relative;
@@ -143,7 +143,6 @@ body {
 
 .reviews {
     padding-top: 24px;
-    padding-bottom: 20px;
 }
 
 .reviews__headline {
@@ -191,25 +190,42 @@ body {
     line-height: 21px;
     color: #000000;
     margin-top: -8px;
+    margin: 0px;
 }
 
 .subscriptions {
     display: flex;
     justify-content: center;
     text-align: center;
-    max-height: 456px;
-    padding-bottom: 114px;
     background-color: #F7F7F7;
     overflow: hidden;
+    position: relative;
+}
+
+.subscriptions::before {
+    content: '';
+    width: 100%;
+    height: 50px;
+    background-color: #FFFFFF;
+    display: block;
+    position: absolute;
+}
+
+.subscriptions::after {
+    content: '';
+    width: 100%;
+    height: 50px;
+    background-color: #FFFFFF;
+    display: block;
+    position: absolute;
+    bottom: 0px;
 }
 
 .subscriptions__wrapper {
     border: 1px solid #FFFFFF;
     border-radius: 50%;
     background-color: #FFFFFF;
-    width: 750px;
-    height: 650px;
-    box-shadow: 0px -45px #FFFFFF;
+    padding: 115px;
 }
 
 .subscriptions__headline {
@@ -218,18 +234,18 @@ body {
     font-weight: bold;
     text-align: center;
     font-size: 17px;
-    line-height: 20px;
+    line-height: 19px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #000000;
-    padding-top: 30px;
-    margin-bottom: 22px;
+    margin: 0px;
 }
 
 .subscriptions__list {
     list-style: none;
     padding: 0px;
 }
+
 .subscriptions__item {
     position: relative;
     margin-bottom: 30px;
@@ -257,7 +273,7 @@ body {
     font-style: normal;
     font-weight: 900;
     font-size: 23px;
-    line-height: 31px;
+    line-height: 25px;
     text-align: center;
     color: #000000;
     margin: 0px;
@@ -316,13 +332,13 @@ body {
     line-height: 37px;
     letter-spacing: 1px;
     color: #FFFFFF;
-    padding-top: 20px;
+    padding-top: 24px;
 }
 
 .footer .main-nav__list {
     display: flex;
     padding-top: 2px;
-    padding-bottom: 28px;
+    padding-bottom: 40px;
     border-bottom: 1px solid #FFFFFF;
     margin: 0px;
     margin-left: 110px;
@@ -331,6 +347,7 @@ body {
     padding-right: 0px;
     opacity: 0.4;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .footer .main-nav__item {
@@ -347,13 +364,6 @@ body {
     color: #FFFFFF;
 }
 
-span {
-    display: block;
-    width: 0;
-    height: 0;
-    overflow: hidden; 
-}
-
 .socials__list {
     display: flex;
     justify-content: center;
@@ -361,6 +371,8 @@ span {
     padding-bottom: 36px;
     list-style: none;
     padding-left: 0px;
+    font-size: 0px;
+    overflow: hidden; 
 }
 
 .socials__link {
