@@ -41,11 +41,13 @@ body {
 }
 
 body {
-    width: 1440px;
-    font-family: "Play", "Roboto", sans-serif;
+    font-family: "PlayfairDisplay", "Roboto", sans-serif;
     text-align:center;
     font-size: 15px;
     line-height: 17px;
+    min-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .main-header__headline {
@@ -64,13 +66,13 @@ body {
     padding-bottom: 28px;
     padding-right: 110px;
     padding-left: 110px;
+    justify-content: space-between;
 }
 
 .main-nav__item {
     display: inline-block;
     list-style: none;
-    flex-basis:auto;
-    flex-grow: 1;
+    
   }
 
 .main-nav__link{
@@ -101,14 +103,21 @@ body {
     text-align: center;
     letter-spacing: 2px;
     color: #FFFFFF;
+    margin-bottom: 150px;
 }
 
-.intro::before {
+.intro__headline::before {
     position: absolute;
+    top: 48px;
+    left: 50%;
+    margin-left: -26px;
     content: "";
-    background-image: url("/img/intro-icon.svg");
+    background-image: url("/img/intro.svg");
     background-position: center;
     background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 .intro__text {
@@ -119,6 +128,7 @@ body {
     line-height: 21px;
     text-align: center;
     color: #FFFFFF; 
+    margin: 0px;
 }
 
 .intro__image {
@@ -126,6 +136,9 @@ body {
     left: 0px;
     top: 0px;
     z-index: -1;
+    min-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .reviews {
@@ -138,7 +151,7 @@ body {
     font-style: normal;
     font-weight: bold;
     text-align: center;
-    font-size: 17px;
+    font-size: 20px;
     line-height: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -165,7 +178,7 @@ body {
     font-size: 23px;
     line-height: 31px;
     color: #000000;
-    margin: 8px;
+    margin: 12px;
     margin-left: 0px;
 }
 
@@ -184,13 +197,20 @@ body {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 62px;
-    border-radius: 35px;
-    border: 1px solid #575757
-
+    max-height: 456px;
+    padding-bottom: 114px;
+    background-color: #F7F7F7;
+    overflow: hidden;
 }
 
+.subscriptions__wrapper {
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    width: 750px;
+    height: 650px;
+    box-shadow: 0px -45px #FFFFFF;
+}
 
 .subscriptions__headline {
     font-family: Roboto;
@@ -202,11 +222,33 @@ body {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #000000;
+    padding-top: 30px;
+    margin-bottom: 22px;
 }
 
 .subscriptions__list {
     list-style: none;
     padding: 0px;
+}
+.subscriptions__item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.subscriptions__item::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 0px;
+    opacity: 0.4;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+}
+
+.subscriptions__item:last-child::after {
+    display: none;
 }
 
 .subscription .subscription__link {
@@ -234,10 +276,11 @@ body {
 
 .subscription__link__all {
     display: block;
-    background-color: orangered;
+    background-color: #FF7931;
     width: 168px;
     height: 26px;
     margin: auto;
+    margin-top: 40px;
     padding-top: 16px;
     padding-bottom: 4px;
 } 
@@ -280,16 +323,19 @@ body {
     display: flex;
     padding-top: 2px;
     padding-bottom: 28px;
-    padding-right: 110px;
-    padding-left: 110px;
     border-bottom: 1px solid #FFFFFF;
+    margin: 0px;
+    margin-left: 110px;
+    margin-right: 110px;
+    padding-left: 0px;
+    padding-right: 0px;
+    opacity: 0.4;
+    justify-content: space-between;
 }
 
 .footer .main-nav__item {
     display: inline-block;
     list-style: none;
-    flex-basis:auto;
-    flex-grow: 1;
 }
 
 .footer .main-nav__link{
@@ -305,16 +351,16 @@ span {
     display: block;
     width: 0;
     height: 0;
-    overflow: hidden;
-    
-    
-  }
+    overflow: hidden; 
+}
+
 .socials__list {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 36px;
     list-style: none;
+    padding-left: 0px;
 }
 
 .socials__link {
