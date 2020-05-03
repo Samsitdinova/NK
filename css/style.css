@@ -3,8 +3,8 @@
     font-style: normal;
     font-weight: 900;
     display: swap;
-    src: url("../NK/fonts/PlayfairDisplay-Black.woff2") format("woff2"),
-    url("../NK/fonts/PlayfairDisplay-Black.woff") format("woff");
+    src: url("../fonts/PlayfairDisplay-Black.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Black.woff") format("woff");
     }
 
 @font-face {
@@ -12,8 +12,8 @@
     font-style: normal;
     font-weight: normal;
     display: swap;
-    src: url("../NK/fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
-    url("../NK/fonts/PlayfairDisplay-Regular.woff") format("woff");
+    src: url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
     }
 
 @font-face {
@@ -21,8 +21,8 @@
     font-weight: 900;
     font-style: normal;
     display: swap;
-    src: url("../NK/fonts/Roboto-Black.woff2") format("woff2"),
-    url("../NK/fonts/Roboto-Black.woff") format("woff");
+    src: url("../fonts/Roboto-Black.woff2") format("woff2"),
+    url("../fonts/Roboto-Black.woff") format("woff");
 }
 
 @font-face {
@@ -30,8 +30,8 @@
   font-weight: normal;
   font-style: normal;
   display: swap;
-  src: url("../NK/fonts/Roboto-Regular.woff2") format("woff2"),
-  url("../NK/fonts/Roboto-Regular.woff") format("woff");
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+  url("../fonts/Roboto-Regular.woff") format("woff");
 }
 
 html,
@@ -112,7 +112,7 @@ body {
     left: 50%;
     margin-left: -26px;
     content: "";
-    background-image: url("/img/intro.svg");
+    background-image: url("../img/intro.svg");
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 50%;
@@ -384,19 +384,19 @@ body {
 }
 
 .socials__link--instagram {
-    background-image: url("/img/instagram_icon.svg");
+    background-image: url("../img/instagram_icon.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .socials__link--facebook {
-    background-image: url("/img/facebook_icon.svg");
+    background-image: url("../img/facebook_icon.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .socials__link--twitter {
-    background-image: url("/img/twitter_icon.svg");
+    background-image: url("../img/twitter_icon.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
